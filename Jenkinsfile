@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        slackSend color: 'good', message: 'Slack Message'
         sh 'mvn clean package'
       }
     }
