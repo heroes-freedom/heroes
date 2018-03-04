@@ -10,17 +10,15 @@ pipeline {
     stage('Build') {
       steps {
         notifyBuild()
-       try {
+        try {
             notifyBuild('STARTED')
             sh 'mvn clean package'
-
-         } catch (e) {
+        } catch (e) {
            currentBuild.result = "FAILED"
            throw e
-         } finally {
-       notifyBuild(currentBuild.result)
-     }
-   }
+        } finally {
+           notifyBuild(currentBuild.result)
+        }
       }
     }
   }
