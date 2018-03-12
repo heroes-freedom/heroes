@@ -1,0 +1,1 @@
+include::{snippets}/index/1/curl-request.adoc
