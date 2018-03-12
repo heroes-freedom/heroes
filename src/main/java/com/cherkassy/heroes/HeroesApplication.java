@@ -1,4 +1,4 @@
-package com.cherkassy.max40a.heroes.heroes;
+package com.cherkassy.heroes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
